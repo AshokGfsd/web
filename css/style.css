@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.head {
+    color: black;
+    background-color: rgb(255, 0, 212);
+    padding: 20px;
+    border-radius: 10px;
+    position: sticky;
+    top: 1px;
+    z-index: 1;
+}
+
+.container {
+    background-color: black;
+    color: white;
+    margin: 15px;
+    height: 240px;
+    width: 300px;
+    border-radius: 10px;
+    display: inline-block;
+
+    h4,
+    div,
+    p {
+        padding-top: 15px;
+        padding-left: 20px;
+
+    }
+
+    p {
+        font-size: smaller;
+    }
+
+    button {
+        position: relative;
+        bottom: -50px;
+        left: 242px;
+        z-index: 0;
+    }
+}
+
+.blank {
+    background-color: black;
+    height: 150%;
+    width: 150%;
+    position: absolute;
+    z-index: 2;
+    opacity: 0.8;
+    display: none;
+
+}
+
+.add {
+    background-color: rgb(255, 0, 212);
+    color: black;
+    border-radius: 100px;
+    padding: 20px 25px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    font-size: large;
+
+}
+
+.add:focus {
+    box-shadow: #3d063d 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3d063d 0 -3px 0 inset;
+}
+
+.add:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3d063d 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.add:active {
+    box-shadow: #3d063d 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+.delete {
+    color: red;
+    background-color: aliceblue;
+    border-radius: 7px;
+    padding: 1px 2px;
+}
+
+.adding {
+
+    * {
+        all: unset
+    }
+
+    z-index: 66;
+    position: fixed;
+    background-color: rgb(175, 53, 155);
+    top: 25%;
+    left: 36%;
+    height: 270px;
+    width: 320px;
+    border-radius: 10px;
+    display: none;
+
+    input {
+        font-size: 20px;
+        padding: 2px;
+        border-radius: 5px;
+        margin: 5px;
+        border: none;
+        background: transparent;
+        border-bottom: solid black;
+        width: 90%;
+    }
+
+    textarea {
+        font-size: 15px;
+        padding: 2px;
+        border-radius: 5px;
+        margin: 5px;
+        width: 90%;
+        height: 130px;
+        padding: 5px;
+        background: transparent;
+        border-bottom: solid black;
+    }
+
+    input::placeholder {
+        color: black;
+    }
+
+    textarea::placeholder {
+        color: black;
+    }
+
+    button {
+        color: rgb(0, 0, 0);
+        background-color: aliceblue;
+        border-radius: 7px;
+        padding: 1px 40px;
+
+
+    }
+}
+
+#ad {
+    position: relative;
+    bottom: -1px;
+    left: 20px;
+}
+#cancel {
+    position: relative;
+    bottom: -1px;
+    right: -65px;
+}
+@media screen and (max-width:425px) {
+    * {
+        margin: 0;
+        padding: 0;
+    
+    }
+    
+    .head {
+        color: black;
+        background-color: rgb(255, 0, 212);
+        padding: 20px;
+        border-radius: 10px;
+        position: sticky;
+        top: 1px;
+        z-index: 1;
+    }
+    
+    .container {
+        background-color: black;
+        color: white;
+        margin: 15px;
+        height: 240px;
+        width: 300px;
+        border-radius: 10px;
+        display: block;
+    
+        h4,
+        div,
+        p {
+            padding-top: 15px;
+            padding-left: 20px;
+    
+        }
+    
+        p {
+            font-size: smaller;
+        }
+    
+        button {
+            position: relative;
+            bottom: -50px;
+            left: 242px;
+            z-index: 0;
+        }
+    }
+    
+    .blank {
+        background-color: black;
+        height: 150%;
+        width: 150%;
+        position: absolute;
+        z-index: 2;
+        opacity: 0.8;
+        display: none;
+    
+    }
+    
+    .add {
+        background-color: rgb(255, 0, 212);
+        color: black;
+        border-radius: 100px;
+        padding: 20px 25px;
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        font-size: large;
+    
+    }
+    
+    .add:focus {
+        box-shadow: #3d063d 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3d063d 0 -3px 0 inset;
+    }
+    
+    .add:hover {
+        box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3d063d 0 -3px 0 inset;
+        transform: translateY(-2px);
+    }
+    
+    .add:active {
+        box-shadow: #3d063d 0 3px 7px inset;
+        transform: translateY(2px);
+    }
+    
+    .delete {
+        color: red;
+        background-color: aliceblue;
+        border-radius: 7px;
+        padding: 1px 2px;
+        position: relative;
+            bottom: -50px;
+            left: 242px;
+            z-index: 0;
+    }
+    
+    .adding {
+    
+        * {
+            all: unset
+        }
+    
+        z-index: 66;
+        position: fixed;
+        background-color: rgb(175, 53, 155);
+        top: 25%;
+        left: 3.5%;
+        height: 270px;
+        width: 320px;
+        border-radius: 10px;
+        display: none;
+    
+        input {
+            font-size: 20px;
+            padding: 2px;
+            border-radius: 5px;
+            margin: 5px;
+            border: none;
+            background: transparent;
+            border-bottom: solid black;
+            width: 90%;
+        }
+    
+        textarea {
+            font-size: 15px;
+            padding: 2px;
+            border-radius: 5px;
+            margin: 5px;
+            width: 90%;
+            height: 130px;
+            padding: 5px;
+            background: transparent;
+            border-bottom: solid black;
+        }
+    
+        input::placeholder {
+            color: black;
+        }
+    
+        textarea::placeholder {
+            color: black;
+        }
+    
+        button {
+            color: rgb(0, 0, 0);
+            background-color: aliceblue;
+            border-radius: 7px;
+            padding: 1px 40px;
+    
+    
+        }
+    }
+    
+    #ad {
+        position: relative;
+        bottom: -1px;
+        left: 20px;
+    }
+    #cancel {
+        position: relative;
+        bottom: -1px;
+        right: -65px;
+    }
+}

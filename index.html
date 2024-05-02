@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="blank"></div>
+    <div class="head">
+        <h3>My Book</h3>
+    </div>
+    <div  id="addding" style="display: inline-block;">
+    <div class="container" >
+        <h4>Title</h4>
+        <div>Subject</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate optio laboriosam molestiae voluptates
+            accusamus voluptatum, quod omnis illo, distinctio et veritatis molestias provident laborum maxime unde
+            doloribus officia impedit iure?</p>
+        <button class="delete" onclick="deletebook(event)">delete</button>
+    </div></div>
+    <div class="adding">
+        <form action="">
+            <input type="text" id="title" placeholder="Title">
+            <input type="text" id="subject" placeholder="Subject">
+            <textarea id="textarea"  placeholder="Short discription"></textarea>
+            <button id="ad" onclick="add11(event)">Add</button><button id="cancel" onclick="cancel(event)">Cancel</button>
+        </form>
+    </div>
+    <div><button class="add" id="add1">+</button></div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
